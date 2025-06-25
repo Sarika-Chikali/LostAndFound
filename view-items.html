@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View All Items - College Lost & Found</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/view.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1> Lost & Found</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="report-lost.html">Report Lost</a></li>
+            <li><a href="report-found.html">Report Found</a></li>
+            <li><a href="view-items.html" class="active">View All</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="items-section">
+        <div class="container">
+          <div class="page-header">
+            <h1>All Reported Items</h1>
+            <p>Browse all lost and found items reported on campus</p>
+          </div>
+          
+          <div class="filters">
+            <div class="search-box">
+              <input type="text" id="search-input" placeholder="Search items...">
+              <button id="search-button" class="btn btn-primary">Search</button>
+            </div>
+            
+            <div class="filter-options">
+              <div class="filter-group">
+                <label for="filter-type">Item Type:</label>
+                <select id="filter-type">
+                  <option value="all">All Items</option>
+                  <option value="lost">Lost Items</option>
+                  <option value="found">Found Items</option>
+                </select>
+              </div>
+              
+              <div class="filter-group">
+                <label for="filter-category">Category:</label>
+                <select id="filter-category">
+                  <option value="all">All Categories</option>
+                  <option value="Electronics">Electronics</option>
+                  <option value="Clothing">Clothing</option>
+                  <option value="Books">Books</option>
+                  <option value="Accessories">Accessories</option>
+                  <option value="ID/Cards">ID/Cards</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              
+              <div class="filter-group">
+                <label for="filter-date">Date Range:</label>
+                <select id="filter-date">
+                  <option value="all">All Time</option>
+                  <option value="today">Today</option>
+                  <option value="week">This Week</option>
+                  <option value="month">This Month</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          
+          <div class="items-container">
+            <div class="tabs">
+              <button class="tab-btn active" data-tab="all">All Items</button>
+              <button class="tab-btn" data-tab="lost">Lost Items</button>
+              <button class="tab-btn" data-tab="found">Found Items</button>
+            </div>
+            
+            <div class="items-grid" id="items-grid">
+              <!-- Items will be loaded here via JavaScript -->
+              <div class="loading">Loading items...</div>
+            </div>
+            
+            <div class="pagination" id="pagination">
+              <!-- Pagination will be added here via JavaScript -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>Campus Lost & Found</h2>
+            <p>Helping students reconnect with their belongings since 2025</p>
+          </div>
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="report-lost.html">Report Lost</a></li>
+              <li><a href="report-found.html">Report Found</a></li>
+              <li><a href="view-items.html">View All</a></li>
+              <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <p>                        🌐 ADITYA COLLEGE OFENGINEERING & TECHNOLOGY<br>
+                                          Aditya Nagar, ADB Road,<br>
+                                          Surampalem - Pin:533437<br>
+                                          East-Godavari District,<br>
+                                          Andhra Pradesh,<br>
+                                          INDIA.<br>
+                                        ☏ Phone (India) :0884-2326212,9959176665<br>
+                                        ✉ Email: office@acet.ac.in</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025  Lost & Found. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="js/api.js"></script>
+    <script type="module" src="js/view.js"></script>
+  </body>
+</html>

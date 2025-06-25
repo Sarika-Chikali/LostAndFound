@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report Found Item - College Lost & Found</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/report.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1> Lost & Found</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="report-lost.html">Report Lost</a></li>
+            <li><a href="report-found.html" class="active">Report Found</a></li>
+            <li><a href="view-items.html">View All</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="report-section">
+        <div class="container">
+          <div class="page-header">
+            <h1>Report a Found Item</h1>
+            <p>Fill out the form below to report an item you've found on campus</p>
+          </div>
+          
+          <div class="form-container">
+            <form id="found-item-form"  data-type="found" >
+              <div class="form-group">
+                <label for="userName">Your Name</label>
+                <input type="text" id="userName" name="userName" required>
+                <small>This will be used to identify your submissions in the dashboard</small>
+              </div>
+              
+              <div class="form-group">
+                <label for="itemName">Item Name</label>
+                <input type="text" id="itemName" name="itemName" required>
+                <small>Brief name of the item (e.g., "Blue Water Bottle")</small>
+              </div>
+              
+              <div class="form-group">
+                <label for="category">Category</label>
+                <select id="category" name="category" required>
+                  <option value="">Select a category</option>
+                  <option value="Electronics">Electronics</option>
+                  <option value="Clothing">Clothing</option>
+                  <option value="Books">Books</option>
+                  <option value="Accessories">Accessories</option>
+                  <option value="ID/Cards">ID/Cards</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="location">Found Location</label>
+                <input type="text" id="location" name="location" required>
+                <small>Where you found the item</small>
+              </div>
+              
+              <div class="form-group">
+                <label for="date">Date Found</label>
+                <input type="date" id="date" name="date" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+                <small>Detailed description including color, size, unique features, etc.</small>
+              </div>
+              
+              <div class="form-group">
+                <label for="contact">Contact Information</label>
+                <input type="text" id="contact" name="contact" required>
+                <small>Email or phone number where someone can reach you</small>
+              </div>
+              
+              <div class="form-group">
+                <label for="turnedIn">Current Status</label>
+                <select id="turnedIn" name="turnedIn" required>
+                  <option value="true">Turned in to Lost & Found Office</option>
+                  <option value="false">I'm holding onto it</option>
+                </select>
+                <small>Let people know if you've turned it in or are holding it</small>
+              </div>
+              
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Submit Report</button>
+                <button type="reset" class="btn btn-secondary">Clear Form</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>Campus Lost & Found</h2>
+            <p>Helping students reconnect with their belongings since 2025</p>
+          </div>
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="report-lost.html">Report Lost</a></li>
+              <li><a href="report-found.html">Report Found</a></li>
+              <li><a href="view-items.html">View All</a></li>
+              <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h3>Contact</h3>
+             <p>                        🌐 ADITYA COLLEGE OFENGINEERING & TECHNOLOGY<br>
+                                          Aditya Nagar, ADB Road,<br>
+                                          Surampalem - Pin:533437<br>
+                                          East-Godavari District,<br>
+                                          Andhra Pradesh,<br>
+                                          INDIA.<br>
+                                        ☏ Phone (India) :0884-2326212,9959176665<br>
+                                        ✉ Email: office@acet.ac.in</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025  Lost & Found. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="js/api.js"></script>
+    <script type="module" src="js/report.js"></script>
+  </body>
+</html>

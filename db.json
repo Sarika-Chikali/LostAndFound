@@ -1,0 +1,17 @@
+{
+  "lostItems": [
+    {
+      "userName": "radha",
+      "itemName": "pen",
+      "category": "Other",
+      "location": "class room",
+      "date": "2025-06-04",
+      "description": "blue pen coated with silver color",
+      "contact": "1234567891",
+      "createdAt": "2025-06-04T16:39:22.163Z",
+      "status": "active",
+      "id": 1
+    }
+  ],
+  "foundItems": []
+}
